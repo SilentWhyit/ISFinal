@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #b71c1c;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background: #1c1c1c;
+    padding: 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #ff5252;
+}
+
+/* Layout container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-left: 4px solid #ff5252;
+    padding-left: 10px;
+}
+
+/* Cards grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Cards */
+.card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #2a2a2a;
+}
+
+/* Lists */
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    background: #1e1e1e;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1c1c1c;
+    margin-top: 40px;
+}
+
+.legend-types {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.type-card {
+    background: linear-gradient(145deg, #1f1f1f, #2c2c2c);
+    color: hotpink;
+    padding: 14px 16px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.passive{
+    color: purple;
+}
+.tactical{
+    color: aqua;
+}
+.ultimate{
+    color: gold;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    gap: 15px;
+}
+
+/* text side */
+.card-text {
+    flex: 1;
+}
+
+/* image side */
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.tableau-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tableau-container iframe {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    border: 2px solid #ff5252;
+}
